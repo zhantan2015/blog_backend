@@ -1,11 +1,15 @@
 import express from 'express'
+import './models'
+
 import root from './router/root'
-import port from './common/port'
+import sql from './router/sql'
 
 const app = express()
+const port = 3333
 
 app.use('/',root)
+app.use('/sql',sql)
 
 app.listen(port, () => {
-    console.log('App is running in http://localhost:3000')
+    console.log(`App is running in http://localhost:${port}`)
 })

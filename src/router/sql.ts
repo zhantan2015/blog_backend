@@ -4,7 +4,10 @@ import mysql from '../models'
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send(mysql.config);
+
+    let sql = req.query;
+
+    res.send(sql)
 })
 
 export default router;
