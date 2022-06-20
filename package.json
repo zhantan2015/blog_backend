@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/app.ts",
-    "mon":"nodemon ./src/app.ts --watch ./src/**/*.ts"
+    "dev:port": "ts-node ./src/app.ts port",
+    "mon:port":"nodemon ./src/app.ts port --watch ./src/**/*.ts"
   },
   "keywords": [],
   "author": "",
